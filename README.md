@@ -34,7 +34,7 @@ This project serves as a template for building Android applications using the be
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/michaeltheshah/android-clean-architecture-template.git
+   git clone git@github.com:michaeltheshah/android-clean-architecture-template.git
    ```
 
 2. Open the project in Android Studio Arctic Fox (or newer).
