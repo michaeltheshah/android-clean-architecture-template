@@ -1,0 +1,55 @@
+<!--
+    **HOW TO IMPORT INTO ANDROID STUDIO**
+
+    1. Select File | Manage IDE Settings | Import Settings from the menu.
+    2. Select this file in the dialog (/{project root}/gradle_version_catalog_live_template.xml).
+    3. In the Import Settings dialog, select the Live templates checkbox and click OK.
+
+    After restarting Android Studio, you will see the imported live templates on the Editor | Live Templates page of the IDE settings.
+-->
+
+<templateSet group="TOML">
+    <template name="lib" value="$aliasName$ = { group = &quot;$group$&quot;, name = &quot;$name$&quot;, version.ref = &quot;$version$&quot; } " description="New Gradle version catalog entry" toReformat="false" toShortenFQNames="true">
+        <variable name="aliasName" expression="complete()" defaultValue="" alwaysStopAt="true" />
+        <variable name="name" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+        <variable name="group" expression="complete()" defaultValue="" alwaysStopAt="true" />
+        <variable name="version" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="CMAKE" value="false" />
+            <option name="GROOVY" value="false" />
+            <option name="HTML" value="false" />
+            <option name="JAVA_CODE" value="false" />
+            <option name="JSON" value="false" />
+            <option name="KOTLIN" value="false" />
+            <option name="OTHER" value="true" />
+            <option name="Properties" value="false" />
+            <option name="SHELL_SCRIPT" value="false" />
+            <option name="XML" value="false" />
+            <option name="XML_ATTRIBUTE" value="false" />
+            <option name="c" value="false" />
+            <option name="cpp" value="false" />
+            <option name="objc" value="false" />
+        </context>
+    </template>
+    <template name="plugin" value="$aliasName$ = { id = &quot;$id$&quot;, version.ref = &quot;$version$&quot; } " description="New Gradle version catalog entry" toReformat="false" toShortenFQNames="true">
+        <variable name="aliasName" expression="complete()" defaultValue="" alwaysStopAt="true" />
+        <variable name="id" expression="complete()" defaultValue="" alwaysStopAt="true" />
+        <variable name="version" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="CMAKE" value="false" />
+            <option name="GROOVY" value="false" />
+            <option name="HTML" value="false" />
+            <option name="JAVA_CODE" value="false" />
+            <option name="JSON" value="false" />
+            <option name="KOTLIN" value="false" />
+            <option name="OTHER" value="true" />
+            <option name="Properties" value="false" />
+            <option name="SHELL_SCRIPT" value="false" />
+            <option name="XML" value="false" />
+            <option name="XML_ATTRIBUTE" value="false" />
+            <option name="c" value="false" />
+            <option name="cpp" value="false" />
+            <option name="objc" value="false" />
+        </context>
+    </template>
+</templateSet>

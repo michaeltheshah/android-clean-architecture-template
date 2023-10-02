@@ -1,0 +1,16 @@
+<!--
+    **HOW TO IMPORT INTO ANDROID STUDIO**
+
+    1. Select File | Manage IDE Settings | Import Settings from the menu.
+    2. Select this file in the dialog (/{project root}/gradle_version_catalog_live_template.xml).
+    3. In the Import Settings dialog, select the Live templates checkbox and click OK.
+
+    After restarting Android Studio, you will see the imported live templates on the Editor | Live Templates page of the IDE settings.
+-->
+
+<template name="pubapi" value="@PublishedApi&#10;internal fun $variable$() = $variable$" description="Create PublishedApi function copy of reified parameter variables" toReformat="false" toShortenFQNames="true">
+    <variable name="variable" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+        <option name="KOTLIN" value="true" />
+    </context>
+</template>
